@@ -47,7 +47,7 @@ class App extends Component {
         </div>
         <div className="Menu">2</div> 
         <div className="Left-column">
-         <button onClick id="Random-Npc" className="Buttons"> Generate Random Npc
+         <button onClick={()=>{this.dropDown()}} id="Random-Npc" className="Buttons"> Generate Random Npc
          </button>
           <ul id="Submenu" className="Generate-Random-Submenu">
             <li>Generates completly random Npc</li>
