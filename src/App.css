@@ -33,10 +33,6 @@
 .Npc-sheet{
   background: rgb(255, 255, 255);
 }
-.Button-column{
-  list-style: none;
-
-}
 .Buttons{
   border: 0;
   border-radius: 5px;
@@ -54,6 +50,10 @@
   color: black;
   
 }
+.List-Items{
+  margin-top: 1em;
+}
+/*needs better position and alignment*/
 .Generate-Random-Submenu{
   list-style:none;
   background-color: white;
@@ -61,15 +61,17 @@
   text-align: center;
   font-size: .75em;
   display: none;
-  width: 150px;
+  width: 100%;
   position: relative;
+ 
 
 }
+/*Needs more styling text decoration perhaps*/
 .Submenu-Buttons{
   border:0;
   text-align: center;
   border-radius: 5px;
-  background-color: white;
+  background-color: rgb(204, 204, 204);
   height:24px;
   width: 100px;
   cursor: pointer;
@@ -89,7 +91,7 @@
   text-align: center;
   font-size: .75em;
   display: none;
-  width: 150px;
+  width: 100%;
   position: relative;
 }
 .Show-Level-Submenu{
@@ -102,9 +104,39 @@
   text-align: center;
   font-size: .75em;
   display: none;
-  width: 150px;
+  width: 100%;
   position: relative;
 }
 .Show-Class-Submenu{
   display: block;
+}
+.Race-Submenu{
+  list-style:none;
+  background-color: white;
+  z-index: 1;
+  text-align: center;
+  font-size: .75em;
+  display: none;
+  width: 100%;
+  position: relative;
+}
+.Show-Race-Submenu{
+  display: block;
+}
+.List-Abilities{
+  list-style: none;
+}
+.Ability-Submenu{
+  list-style:none;
+  background-color: white;
+  z-index: 1;
+  text-align: center;
+  font-size: .75em;
+  display: none;
+  width: 100%;
+  position: relative;
+}
+.Show-Ability-Submenu{
+  display: block;
+
 }
