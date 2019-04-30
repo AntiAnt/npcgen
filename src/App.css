@@ -62,6 +62,7 @@
   font-size: .75em;
   display: none;
   width: 150px;
+  position: relative;
 
 }
 .Submenu-Buttons{
@@ -78,6 +79,32 @@
   background-color: turquoise;
   color: black;
 }
-.Show-Submenu{
+.Show-Random-Submenu{
   display:block
+}
+.Level-Submenu{
+  list-style:none;
+  background-color: white;
+  z-index: 1;
+  text-align: center;
+  font-size: .75em;
+  display: none;
+  width: 150px;
+  position: relative;
+}
+.Show-Level-Submenu{
+  display:block;
+}
+.Class-Submenu{
+  list-style:none;
+  background-color: white;
+  z-index: 1;
+  text-align: center;
+  font-size: .75em;
+  display: none;
+  width: 150px;
+  position: relative;
+}
+.Show-Class-Submenu{
+  display: block;
 }
