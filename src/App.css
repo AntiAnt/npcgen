@@ -8,6 +8,9 @@
   
 
 }
+.List-Items{
+  margin-top:1em;
+}
 .Title{
   background: white;
   font-size: 2em;
@@ -52,6 +55,17 @@
 }
 .List-Items{
   margin-top: 1em;
+}
+.Submenu{
+  list-style:none;
+  background-color: white;
+  z-index: 1;
+  text-align: center;
+  font-size: .75em;
+  display: none;
+  width: 100%;
+  position: relative;
+  margin-left: 2em;
 }
 /*needs better position and alignment*/
 .Generate-Random-Submenu{
@@ -106,6 +120,8 @@
   display: none;
   width: 100%;
   position: relative;
+ /*all submenus need a left margin*/
+
 }
 .Show-Class-Submenu{
   display: block;
@@ -139,4 +155,14 @@
 .Show-Ability-Submenu{
   display: block;
 
+}
+
+.Show-Background-Submenu{
+  display:block;
+}
+.Show-Prof-Submenu{
+  display:block;
+}
+.Show-Equip-Submenu{
+  display:block;
 }

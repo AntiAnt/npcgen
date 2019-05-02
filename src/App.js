@@ -78,15 +78,39 @@ class App extends Component {
             <ul id="Ability-Scores" className="Ability-Submenu">
               <li>Choose Ability Scores</li>
                 <ul className="List-Abilities">
-                  <li>Strength</li>
+                  <li>Choose Ability Scores</li>
+                  <li>Strength</li> {/*TODO input for these scores*/}
                   <li>Dexterity</li>
                   <li>Constitution</li>
                   <li>Inteligence</li>
                   <li>Wisdom</li>
                   <li>Charisma</li>
+                  <li><button className="Submenu-Buttons" onClick={()=>{this.randAbilityScore()}}>Randomize Scores</button></li> {/*Random Ability scores function onClick*/}
                 </ul>
             </ul>
-          
+          <button id="Background-Npc" onClick={()=>{this.dropDown("Background", "Show-Background-Submenu")}} className="Buttons">Background</button>
+            <ul id="Background" className="Background-Submenu Submenu">
+              <li>Choose a Npc Background</li>
+              <li><button className="Submenu-Buttons">Background</button></li> {/* TODO onClick funtion for dropdown to choose a basckground form a list */}
+              <li className="List-Items"> Random Background</li>
+              <li><button className="Submenu-Buttons">Random Background</button></li>
+            </ul>
+          <button id="Prof-Npc" onClick={()=>{this.dropDown('Prof', 'Show-Prof-Submenu')}} className= "Buttons">Proficiencies</button>
+            <ul id="Prof" className="Submenu">
+              <li>Choose Npc Proficiencies</li>
+              <li><button className= "Submenu-Buttons">Armor</button></li> {/* TODO dropdown checkboxes for these buttons */}
+              <li><button className= "Submenu-Buttons">Weapons</button></li>
+              <li><button className= "Submenu-Buttons">Languages</button></li>
+              <li><button className= "Submenu-Buttons">Tools</button></li>
+            </ul>
+          <button id="Equip-Npc" onClick={()=>{this.dropDown('Equip', 'Show-Equip-Submenu')}} className="Buttons">Equipment</button>
+            <ul id='Equip' className='Submenu'>
+              <li><h5>Npc Equipment</h5></li> {/* TODO Dropdown checkboxes */}
+              <li><button>Weapons</button></li>
+              <li><button>Armor</button></li>
+              <li><button>Gear</button></li>
+              <li><button>Tools</button></li>
+            </ul>
         </div>
         <div className="Npc-sheet">4 
           
