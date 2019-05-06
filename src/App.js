@@ -106,11 +106,51 @@ class App extends Component {
           <button id="Equip-Npc" onClick={()=>{this.dropDown('Equip', 'Show-Equip-Submenu')}} className="Buttons">Equipment</button>
             <ul id='Equip' className='Submenu'>
               <li><h5>Npc Equipment</h5></li> {/* TODO Dropdown checkboxes */}
-              <li><button>Weapons</button></li>
-              <li><button>Armor</button></li>
-              <li><button>Gear</button></li>
-              <li><button>Tools</button></li>
+              <li><button className="Submenu-Buttons">Weapons</button></li>
+              <li><button className="Submenu-Buttons">Armor</button></li>
+              <li><button className="Submenu-Buttons">Gear</button></li>
+              <li><button className="Submenu-Buttons">Tools</button></li>
+              <li><button className="Submenu-Buttons">Random Equipment</button></li>
             </ul>
+          <button id="Spells-Npc" onClick={()=>{this.dropDown("Spells", "Show-Spells-Submenu")}} className="Buttons">Spells</button>
+            <ul id="Spells" className="Submenu">
+              <li>Choose your Npc spells</li>
+              <li><button className="Submenu-Buttons">Cantrips</button></li>
+              <li><button className="Submenu-Buttons">Spell Level 1</button></li> {/* TODO lots to do here lol */}
+              <li><button className="Submenu-Buttons">Spell Level 2</button></li>
+              <li><button className="Submenu-Buttons">Spell Level 3</button></li>
+              <li><button className="Submenu-Buttons">Spell Level 4</button></li>
+              <li><button className="Submenu-Buttons">Spell Level 5</button></li>
+              <li><button className="Submenu-Buttons">Spell Level 6</button></li>
+              <li><button className="Submenu-Buttons">Spell Level 7</button></li>
+              <li><button className="Submenu-Buttons">Spell Level 8</button></li>
+              <li><button className="Submenu-Buttons">Spell Level 9</button></li>
+              <li><button className="Submenu-Buttons">Random Spells</button></li>
+            </ul>
+          <button id="Hits-Npc" onClick={()=>{this.dropDown("Hits", "Show-Hits-Submenu")}} className="Buttons">Hit Points</button>
+            <ul id="Hits" className="Submenu">
+              <li><label for="max">Maximum Hit Points</label></li>
+              <li><input type="text" id="max" name="max" minlength="1" maxlength="3" size="5" className="Submenu-Inputs"></input> </li>
+              <li><label for="Curr">Current Hit Points</label></li>
+              <li><input type="text" id="Curr" name="Curr" minlength="1" maxlength="3" size="5" className="Submenu-Inputs"></input> </li>
+              <li className="List-Items"><button className="Submenu-Buttons">Random Hit Points</button></li>
+            </ul>
+          <button id="Armor-Npc" onClick={()=>{this.dropDown("Armor", 'Show-Armor-Submenu')}} className="Buttons">Armor Class</button>
+            <ul id='Armor' className='Submenu'>
+              <li><h5>Armor Class</h5></li>
+              <li><input type="text" minlength="1" maxlength='2' size='5' className='Submenu-Inputs'></input> </li> {/* Currently set by equipped armor */}
+            </ul>
+          <button id='Features-Npc' onClick={()=>{this.dropDown('Features', 'Show-Features-Submenu')}} className='Buttons'>Features</button>
+            <ul id='Features' className='Submenu'>
+              <li><button className='Submenu-Buttons'>Choose Features</button></li>
+
+            </ul>
+          <button id='Traits-Npc' onClick={()=>{this.dropDown('Traits', 'Show-Traits-Submenu')}} className='Buttons'>Traits</button>
+            <ul id='Traits' className='Submenu'>
+              <li><label for='Personality Traits'>Personality Traits</label></li>
+              <li><input type='text' id='Personality Traits' name='Personality Traits' minlength='1' maxlength='100' size='10'></input></li>
+            </ul>
+          
         </div>
         <div className="Npc-sheet">4 
           
